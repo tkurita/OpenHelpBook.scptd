@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>OpenHelpBook Reference</title>
+		<meta name="AppleTitle" content="OpenHelpBook Reference" />
+
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<link href="assets/default.css" type="text/css" rel="stylesheet" media="all" />
+        <link href="assets/applescript.css" type="text/css" rel="stylesheet" media="all" />
+		<meta name="keywords" content="OpenHelpBook, AppleScript" />
+		<script type="text/javascript" src="assets-helpbook/run_helpscript.js"></script>
+		<script type="text/javascript" src="assets/navibar-jump.js"></script>
+        <link id="helpviewer-handler-helper" href="assets-helpbook/helpviewer-handler-helper.scpt" />
+        <script type="text/javascript" src="assets-helpbook/helpviewer-handler-enable.js"></script>
+        <link href="./" id="HelpBookRoot" />
+	</head>
+
+	<body>
+		<div id="navi-bar">
+			<div class="edit-script-link">
+				<a onclick="return runHelpScriptWithBundleRoot(this)" href="assets-helpbook/editScript.scpt">Edit Script</a>
+			</div>
+			<div class="left-contents">
+			<div class="to-root">
+				<!-- InstanceBeginEditable name="to-root" --><!-- InstanceEndEditable -->
+			</div>
+			<select onchange="navibarJump(this)">
+<option value="">
+§
+</option>
+<option value="#Example">
+Example
+</option>
+<option value="#Handlers">
+Handlers
+</option>
+<option value="#do">
+- do
+</option>
+</select>
+			</div>
+		</div>
+		<!-- InstanceBeginEditable name="prev-next-item" --><!-- InstanceEndEditable -->
+		<div id="contents">
+		<h1>OpenHelpBook Reference</h1>
+<ul>
+<li>Version 1.0</li>
+<li>Author Tetsuro KURITA <a href="mailto:scriptfactory@mac.com">scriptfactory@mac.com</a></li>
+<li>Requirements : OS X 10.9 or later</li>
+<li><a href="http://www.script-factory.net/XModules/OpenHelpBook/en/index.html">Home page</a> || <a href="http://www.script-factory.net/XModules/OpenHelpBook/changelog.html">ChangeLog</a> || <a href="https://github.com/tkurita/OpenHelpBook.scptd">Repository</a> </li>
+</ul>
+<p>OpenHelpBook is to open a help book in a bundle with Help Viewer.</p>
+<h2 id="Example">Example</h2>
+<div class="sourceCode">
+<div class="scriptButton">
+    <input type="button" value="Open this script" onclick="document.location = this.src" src="applescript://com.apple.scripteditor?action=new&amp;script=tell%20script%20%22OpenHelpBook%22%0D%09do(path%20to%20application%20%22Mail%22)%0Dend%20tell" />
+</div><div>
+<span class="langKeyword">tell</span> <span class="className">script</span><span class="normal"> &quot;OpenHelpBook&quot;</span>
+</div>
+<div style="text-indent:4ex;">
+<span class="userDefine">do</span><span class="normal">(</span><span class="additionCommandName">path to</span> <span class="className">application</span><span class="normal"> &quot;Mail&quot;)</span>
+</div>
+<div>
+<span class="langKeyword">end</span> <span class="langKeyword">tell</span>
+</div>
+</div>
+<h2 id="Handlers">Handlers</h2>
+<h3 id="do"><a href="pages/do.html">do</a></h3>
+<p>open a help book in the specified bundle with Help Viewer.</p>
+		</div>
+		<!-- InstanceBeginEditable name="prev-next-item" --><!-- InstanceEndEditable -->
+	</body>
+
+</html>
